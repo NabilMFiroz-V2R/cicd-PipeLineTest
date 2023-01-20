@@ -12,7 +12,7 @@ class DetailsCard extends StatelessWidget {
         appBar: AppBar(
           // Here we take the value from the MyHomePage object that was created by
           // the App.build method, and use it to set our appbar title.
-          title: Text('title'),
+          title: Text('Title'),
           backgroundColor: Colors.cyan,
           centerTitle: true,
         ),
