@@ -1,3 +1,4 @@
+import 'package:cicd_pipeline_test/tabletUI/test_ui_one.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -77,6 +78,16 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
         backgroundColor: Colors.cyan,
         centerTitle: true,
+        actions: [
+          IconButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const DetailsCard()));
+              },
+              icon: const Icon(Icons.navigate_next_rounded)),
+        ],
       ),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
